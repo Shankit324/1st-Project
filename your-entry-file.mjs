@@ -42,21 +42,20 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const accountSid = ''; //enter your accountSid
 const authToken = ''; //enter your authToken
 
-app.use(express.static("/Users/shaikitkumardas/Documents/E-CommerceWebsite/Pages"))
+app.use(express.static("/Pages"))
 
 app.get('/', (req, res) => {
     const isAuthenticated = req.session.authenticated || false;
     const userData = req.session.userData;
-    res.render('/Users/shaikitkumardas/Documents/E-CommerceWebsite/views/homepage.ejs', { isAuthenticated, userData });
+    res.render('/views/homepage.ejs', { isAuthenticated, userData });
 })
 
 app.get('/reset', (req, res) => {
-    res.sendFile("/Users/shaikitkumardas/Documents/E-CommerceWebsite/Pages/html/crtpswd.html")
+    res.sendFile("/Pages/html/crtpswd.html")
 })
 
 app.get('/Sign-in', (req, res) => {
-
-    res.sendFile("/Users/shaikitkumardas/Documents/E-CommerceWebsite/views/Sign-in.ejs");
+    res.sendFile("/Pages/html/Sign-in.html");
 })
 
 app.post("/send", async (req, res) => {
@@ -87,8 +86,8 @@ app.post('/sendotp', (req, res) => {
         .create({
             body: "Hello there...Your OTP for the process of registration in GetArduino website is: " + o,
             to: mbn,
-            from: '+13347218102',
-        })
+            from: '',
+        }) //enter the mobile number provided by twilio
         .then((message) => {
             console.log(message.sid);
             let i = 0;
@@ -170,7 +169,7 @@ app.post('/reset-password', async (req, res) => {
     }
     else {
         console.log("Entry")
-        res.sendFile("/Users/shaikitkumardas/Documents/E-CommerceWebsite/Pages/html/update.html");
+        res.sendFile("/Pages/html/update.html");
     }
 })
 
