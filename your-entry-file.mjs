@@ -39,8 +39,8 @@ const Details = mongoose.model('Details', Schema);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const accountSid = 'ACcf72f4b43ec9086c19dd1ca74d76822a';
-const authToken = '6b5b4f19137e4ce07ba53db33cc5d404';
+const accountSid = ''; //enter your accountSid
+const authToken = ''; //enter your authToken
 
 app.use(express.static("/Users/shaikitkumardas/Documents/E-CommerceWebsite/Pages"))
 
