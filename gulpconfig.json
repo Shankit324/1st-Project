@@ -1,0 +1,17 @@
+{
+    "browserSyncOptions": {
+        "server": {
+          "baseDir": "./Pages"
+        },
+        "port": 3000,
+        "files": ["Pages/html/*.html", "Pages/js/*.js","Pages/Images/*.{png,jpg,gif,svg,webp,jpeg}"],
+        "open": true,
+        "browser": "google chrome",
+        "reloadDelay": 1000
+    },
+    "paths": {
+        "js": "./Pages/js",
+        "html": "./Pages/html",
+        "images": "./Pages/Images"
+    }
+}

@@ -1,0 +1,210 @@
+.overflow{
+    width:100%;
+    height:500px;
+    overflow: hidden;
+ }
+ body{
+    background-color: rgb(210, 238, 247);
+ }
+ #nav{
+     border-radius: 5px;
+ }
+ #logo{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+ #logo1{
+     padding-left: 10px;
+     padding-bottom: 10px;
+     margin-right: 0px;
+ }
+ #header{
+     width: 100%;
+ }
+ .container{
+     display: inline;
+ }
+ #main1{
+     display: inline;
+     width: 80%;
+ }
+ #home1:hover{
+     background-color: gray;
+     border-radius: 5px; 
+ }
+ #home2:hover{
+     background-color: gray;
+     border-radius: 5px; 
+ }
+ #home3:hover{
+     background-color: gray;
+     border-radius: 5px; 
+ }
+ #profile1:hover{
+     background-color: gray;
+     border-radius: 5px; 
+ }
+ li:hover{
+     background-color: gray;
+     border-radius: 5px;
+ }
+ .dropdown-item:hover{
+     background-color: grey;
+     color: white;
+     border-radius: 5px;
+ }
+ #searchdiv{
+   justify-content: center;
+ }
+ #search{
+   width: 75%;
+   height: 100px;
+   border-radius: 30px;
+   font-size: 30px;
+   box-shadow: h-offset v-offset blur spread color inset;
+   z-index: 1;
+ }
+ #sbut{
+   height: 100px;
+   border-radius: 40px;
+   font-size: 30px;
+   width: 15%;
+   z-index: 1;
+   background-color: gray;
+   border-color: lightgray;
+ }
+ #bgi{
+   background-image: url("../Images/bgi.webp");
+   background-size: cover;
+   background-position: bottom;
+   height: 610px;
+   mask-image: linear-gradient(to top, 
+   rgba(0,0,0,1) 2%, 
+   rgba(0,0,0,0.5) 3%, 
+   rgba(0,0,0,0) 5%, 
+   rgba(0,0,0,0.5) 20%, 
+   rgba(0,0,0,1) 50%
+   ); 
+   width:100%; 
+ }
+ .text{
+   font-size: 150px;;
+ }
+ #dark{
+   color: #ffd700;
+   width: 300px;
+   text-align: left;
+   border-radius: 50px;
+   margin-left: -20%;
+   z-index: 1;
+   box-shadow: none;
+ }
+ #light{
+   color: white;
+   width: 600px;
+   text-align: left;
+   border-radius: 50px;
+   margin-top: -10%;
+   margin-left: -20%;
+   z-index: 2;
+   box-shadow: none;
+ }
+ #ss{
+   font-size: 60px;
+ }
+ #p{
+   display: inline;
+   }
+ #profile1{
+   color: white;
+ }
+ #profile{
+   height: 50px;
+   width: 50px;
+   margin-right: 0px;
+ }
+ #flex{
+   width: 60%;
+ }
+ #searcharea{
+   display: flex;
+   justify-content: center;
+   width: 97.8%;
+   background-color: rgb(210, 229, 242);
+   z-index: 1;
+   position: absolute;
+   margin-top: -6%;
+   opacity: 95%; 
+ }
+ #searchdiv{
+   width: 100%;
+ } 
+ .s1{
+   width: 50%;
+   background-image: url("../Images/ArduinoUno.jpeg");
+   background-size: cover;
+   height: 100%;
+ }
+ .s2{
+   background-image: url("../Images/Arduinonano.webp");
+   background-size: cover;
+   width: 50%;
+   height: 100%;
+ }
+ .s3{
+   background-image: url("../Images/Arduinomega.webp");
+   background-size: cover;
+   width: 50%;
+   height: 100%;
+ }
+ .s4{
+   background-image: url("../Images/Arduinodue.webp");
+   background-size: cover;
+   width: 50%;
+   height: 100%;
+ }
+ .s5{
+   background-image: url("../Images/Arduinoleonardo.webp");
+   background-size: cover;
+   width: 50%;
+   height: 100%;
+ }
+ .slider1{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+ .slider2{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+ .slider3{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+ .slider4{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+ .slider5{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+ .highlight {
+   background-color: rgb(249, 249, 94); 
+   font-weight: 700;
+   opacity: 0.7;
+ }

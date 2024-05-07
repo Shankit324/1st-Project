@@ -1,0 +1,39 @@
+body {
+  background-image: url("../Images/bgp1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input {
+  height: 20px;
+  width: 60%;
+  border-radius: 5px;
+}
+
+select {
+  box-sizing: 20px;
+  width: 60%;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+button {
+  height: 30px;
+  width: 80%;
+  background-color: blueviolet;
+  border-radius: 10px;
+  border-color: blueviolet;
+  color: white;
+  font-weight: 700;
+  font-size: large;
+}
+
+.visible {
+  display: block;
+}
+
+label {
+  text-align: center;
+}/*# sourceMappingURL=profile.css.map */

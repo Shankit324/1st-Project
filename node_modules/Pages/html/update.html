@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+</head>
+
+<body style="background-color: lightgrey;">
+    <div id="d" style="display: block;">
+        <h1>
+            RESET PASSWORD
+        </h1>
+        <form id="f">
+            <label>Create Password:</label><br>
+            <input id="p" type="password" for="pswd1" name="pswd1" style="border-radius: 5px;"><br>
+            <label>Re-enter Password:</label><br>
+            <input id="rp" type="password" style="border-radius: 5px;"><br>
+            <div style="color: red;display: none;" id="div1">*Password didn't match..please check..</div>
+            <button id="b" type="submit" style="background-color: gold;border-radius: 5px;font-weight: 700;">RESET</button>
+        </form><br>
+    </div>
+    <script>
+        let p = document.querySelectorAll("input[type='password']");
+        for (let i = 0; i < p.length; i++) {
+        p[i].addEventListener("input", () => {
+            if (p[0].value !== p[1].value) {
+                p[1].setCustomValidity("Password didn't match....")
+                document.getElementById("div1").style.display = "block";
+            }
+            else {
+                p[1].setCustomValidity("")
+                document.getElementById("div1").style.display = "none";
+                document.getElementsByTagName("form")[0].action = "/update"
+                document.getElementsByTagName("form")[0].method = "POST"
+            }})
+        };
+    </script>
+</body>
+
+</html>

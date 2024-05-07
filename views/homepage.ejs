@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>GetArduino</title>
+  <link rel="icon" type="image/png" href="https://www.google.com/
+    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6fs0vMJGE8x3u0sF6ZSZ8ezkyl0FKJ-asi70uoKTeVA&s">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/scss/Home.css">
+</head>
+
+<body>
+  <header class="p-3 m-0 border-0 bd-example m-0 border-0" id="i">
+    <nav class="navbar bg-dark border-bottom border-body" id="nav" data-bs-theme="dark">
+      <div id="header">
+        <div class="container">
+          <a id="logo1" class="navbar-brand" href="/">
+            <img src="Images/logo.jpg" alt="logo" width="50" height="50">
+          </a>
+        </div>
+        <div class="container-fluid" id="main1" style="display: inline;">
+          <a class="navbar-brand" id="home1" href="/" style="display: inline-block;">Home</a>
+          <% if (isAuthenticated) { %>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#togle" aria-expanded="false" aria-controls="togle" aria-label="Toggle navigation">
+            <img src="Images/profile.jpg" style="z-index: 2;" id="profile">
+            <span id="p">
+              <span id="profile12"><%= userData.Name %></span>
+            </span>
+          </button>
+          <div id="togle" class="navbar-collapse collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/logout">&nbsp;&nbsp;Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+          <% } else { %>
+            <a id="flex" href="/sign-in" class="navbar-brand" style="display: inline-blocke;z-index:0;width:10px;">
+              <img src="Images/profile.jpg" style="z-index: 0;" id="profile">
+              <span id="p">
+                <span id="profile1">Sign in</span>
+              </span>
+            </a>
+          <% } %>
+        <button class="navbar-toggler collapsed" type="button"data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">&nbsp;&nbsp;Home</a>
+            </li>
+            <li class="nav-item">
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="bgi">
+      <div id="logo">
+        <span>
+          <h1>
+            <p class="text" id="dark">Get</p>
+            <p class="text" id="light">Arduino</p>
+          </h1>
+        </span>
+      </div>
+    </div>
+    <hr>
+    <div id="searcharea">
+      <form class="d-flex" id="searchdiv" role="search">
+        <input class="form-control me-2" id="search" type="search" placeholder="Search in GetArduino"
+          aria-label="Search">
+        <button class="btn btn-primary" id="sbut" type="submit">
+          <div id="ss" style="-webkit-transform: rotate(-45deg); 
+          -moz-transform: rotate(-45deg); 
+            -o-transform: rotate(-45deg);
+               transform: rotate(-45deg);">&#9906</div>
+        </button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <br /><br />
+    <div class="over" style="overflow:hidden;width:100%;">
+      <div style="display:flex;align-items:center">
+        <div class="arrowleft"
+          style="z-index:2;height:500px;width:5%;font-size: 300px;color: #8aa29e;display:inline;opacity:0.2;cursor:pointer;text-align: left;margin-right: 42%;">
+          &#8249</div>
+        <div class="arrowright"
+          style="z-index:2;height:500px;width:5%;font-size: 300px;color: #8aa29e;cursor:pointer;opacity:0.2;display:inline;text-align: right;margin-left: 42%;">
+          &#8250</div>
+      </div>
+      <div class="overflow"
+        style="height:500px;width:500%;display:flex;flex-direction:row;justify-content: space-between;transition: transform 1s ease-in-out;margin-top: -500px;">
+        <div class="slider1"
+          style="width:19.7%;height:500px;background-color: white;border-radius: 20px;font-size: 50px;text-align: center;border: 10px;z-index:-1">
+          <div class="s1"></div>
+          <div style="width:48%;color:#ffd700;"><b>Arduino UNO<br>
+              <div style="color:gray;font-size: 17px;">Arduino UNO is a microcontroller board based on the ATmega328P.
+                It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz
+                ceramic resonator, a USB connection, a power jack, an ICSP header and a reset button. It contains
+                everything needed to support the microcontroller; simply connect it to a computer with a USB cable or
+                power it with a AC-to-DC adapter or battery to get started. You can tinker with your UNO without
+                worrying too much about doing something wrong, worst case scenario you can replace the chip for a few
+                dollars and start over again.</div>
+            </b></div>
+        </div>
+        <div class="slider2"
+          style="height:500px;width:19.7%;background-color: white;border-radius: 20px;font-size: 50px;text-align: center;border: 10px;z-index:-1">
+          <div class="s2"></div>
+          <div style="width:48%;color:#ffd700;"><b>Arduino NANO<br>
+              <div style="color:gray;font-size: 17px;">The Arduino Nano is Arduino's classic breadboard friendly
+                designed board with the smallest dimensions. The Arduino Nano comes with pin headers that allow for an
+                easy attachment onto a breadboard and features a Mini-B USB connector.</div>
+            </b></div>
+        </div>
+        <div class="slider3"
+          style="height:500px;width:19.7%;background-color: white;border-radius: 20px;font-size: 50px;text-align: center;border: 10px;z-index:-1">
+          <div class="s3"></div>
+          <div style="width:48%;color:#ffd700;"><b>Arduino MEGA<br>
+              <div style="color:gray;font-size: 17px;">The Arduino Mega 2560 is a microcontroller board based on the
+                ATmega2560. It has 54 digital input/output pins (of which 15 can be used as PWM outputs), 16 analog
+                inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an
+                ICSP header, and a reset button.The 8-bit board with 54 digital pins, 16 analog inputs, and 4 serial
+                ports.</div>
+            </b></div>
+        </div>
+        <div class="slider4"
+          style="height:500px;width:19.7%;background-color: white;border-radius: 20px;font-size: 50px;text-align: center;border: 10px;z-index:-1">
+          <div class="s4"></div>
+          <div style="width:48%;color:#ffd700;"><b>Arduino DUE<br>
+              <div style="color:gray;font-size: 17px;">The Arduino Due is the first Arduino board based on a 32-bit ARM
+                core microcontroller. With 54 digital input/output pins, 12 analog inputs, 2 DAC and 2 CAN it is the
+                perfect board for powerful larger scale Arduino projects.</div>
+            </b></div>
+        </div>
+        <div class="slider5"
+          style="height:500px;width:19.7%;background-color: white;border-radius: 20px;font-size: 50px;text-align: center;border: 10px;-index:-1">
+          <div class="s5"></div>
+          <div style="width:48%;color:#ffd700;"><b>Arduino LEONARDO<br>
+              <div style="color:gray;font-size: 17px;">The Leonardo differs from all preceding boards in that the
+                ATmega32u4 has built-in USB communication, eliminating the need for a secondary processor. This allows
+                the Leonardo to appear to a connected computer as a mouse and keyboard, in addition to a virtual (CDC)
+                serial / COM port.</div>
+            </b></div>
+        </div>
+      </div>
+    </div>
+    <div id="intro" style="width:100%;overflow:hidden;z-index:5;">
+      <br />
+      <h1 style="color:black;font-size:50px;margin-left: 10px;">
+        <h1>What is Arduino?</h1><br />
+        <p style="color:gray;font-size:20px;margin-left: 10px;"></p>Arduino is an open-source electronics platform based
+        on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a
+        button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing
+        something online. You can tell your board what to do by sending a set of instructions to the microcontroller on
+        the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE),
+        based on Processing.
+
+        Over the years Arduino has been the brain of thousands of projects, from everyday objects to complex scientific
+        instruments. A worldwide community of makers - students, hobbyists, artists, programmers, and professionals -
+        has gathered around this open-source platform, their contributions have added up to an incredible amount of
+        accessible knowledge that can be of great help to novices and experts alike.
+
+        Arduino was born at the Ivrea Interaction Design Institute as an easy tool for fast prototyping, aimed at
+        students without a background in electronics and programming. As soon as it reached a wider community, the
+        Arduino board started changing to adapt to new needs and challenges, differentiating its offer from simple 8-bit
+        boards to products for IoT applications, wearable, 3D printing, and embedded environments.</p>
+        <br />
+        <h1 style="color:black;font-size:50px;margin-left: 10px;">
+          <h1>Why Arduino?</h1><br />
+          <p style="color:gray;font-size:20px;margin-left: 10px;"></p>Thanks to its simple and accessible user
+          experience, Arduino has been used in thousands of different projects and applications. The Arduino software is
+          easy-to-use for beginners, yet flexible enough for advanced users. It runs on Mac, Windows, and Linux.
+          Teachers and students use it to build low cost scientific instruments, to prove chemistry and physics
+          principles, or to get started with programming and robotics. Designers and architects build interactive
+          prototypes, musicians and artists use it for installations and to experiment with new musical instruments.
+          Makers, of course, use it to build many of the projects exhibited at the Maker Faire, for example. Arduino is
+          a key tool to learn new things. Anyone - children, hobbyists, artists, programmers - can start tinkering just
+          following the step by step instructions of a kit, or sharing ideas online with other members of the Arduino
+          community.
+
+          There are many other microcontrollers and microcontroller platforms available for physical computing. Parallax
+          Basic Stamp, Netmedia's BX-24, Phidgets, MIT's Handyboard, and many others offer similar functionality. All of
+          these tools take the messy details of microcontroller programming and wrap it up in an easy-to-use package.
+          Arduino also simplifies the process of working with microcontrollers, but it offers some advantage for
+          teachers, students, and interested amateurs over other systems:
+
+          <br><u><b>#Inexpensive:</b></u> Arduino boards are relatively inexpensive compared to other microcontroller
+          platforms. The least expensive version of the Arduino module can be assembled by hand, and even the
+          pre-assembled Arduino modules cost less than
+
+          <br><u><b>#Cross-platform:</b></u> The Arduino Software (IDE) runs on Windows, Macintosh OSX, and Linux
+          operating systems. Most microcontroller systems are limited to Windows.
+
+          <br><u><b>#Simple, clear programming environment:</b></u> The Arduino Software (IDE) is easy-to-use for
+          beginners, yet flexible enough for advanced users to take advantage of as well. For teachers, it's
+          conveniently based on the Processing programming environment, so students learning to program in that
+          environment will be familiar with how the Arduino IDE works.
+
+          <br><u><b>#Open source and extensible software:</b></u> The Arduino software is published as open source
+          tools, available for extension by experienced programmers. The language can be expanded through C++ libraries,
+          and people wanting to understand the technical details can make the leap from Arduino to the AVR C programming
+          language on which it's based. Similarly, you can add AVR-C code directly into your Arduino programs if you
+          want to.
+
+          <br><u><b>Open source and extensible hardware:</b></u> The plans of the Arduino boards are published under a
+          Creative Commons license, so experienced circuit designers can make their own version of the module, extending
+          it and improving it. Even relatively inexperienced users can build the breadboard version of the module in
+          order to understand how it works and save money.</p>
+    </div>
+  </main>
+  <footer>
+    <div
+      style="background-color: white;display: flex;flex-direction: column;align-items: center;justify-content: center;height: 200px;">
+      <div style="background-color:black;height:1px;width:100%;"></div><br>
+      <div style="color:black;font-size: large;">For buying products sign in</div>
+      <a href="/Sign-in"><button id="button1" class="btn btn-warning"
+          style="width:430px;height:38px;border-radius: 5px;text-shadow: 0 0 #ffd700;text-align: center;display:block;font-size: larger;"><b>Sign
+            in</b></button></a>
+      <br>
+      <div style="color:black;font-size: large;">New User?<a href="/html/profile.html">Click here!</a></div>
+      <hr style="color:black;width:100%;">
+    </div>
+    <div style="height: 100px;background-color: black;">
+      <div class="light"
+        style="display:flex;flex-direction: row;text-align: center;align-items: center;justify-content: center;font-size: larger;background-color: rgb(75, 76, 77);padding-top: 10px;">
+        <p style="color:#ffd700"><b>Get</b></p>
+        <p style="color:white"><b>Arduino</b></p>
+      </div>
+      <div class="dark"
+        style="color: white;text-align: center;font-size: medium;padding-top: 10px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        © 2024, Inc. or its affiliates, GetArduino</div>
+    </div>
+  </footer>
+  <script type="module" src="/js/Home.mjs"></script>
+</body>
+
+</html>
