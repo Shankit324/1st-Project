@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="/scss/profile.css">
+</head>
+<body style="display: flex;flex-direction: row;align-items: center;justify-content: center;background-color: rgb(152, 33, 152);">
+  <form style="width:30%;height:70%;display: flex;flex-direction: column;align-items: center;justify-content: center;background-color: white;padding-bottom: 20px;margin-top: 10px;margin-bottom: 10px;border-radius: 10px;font-size: 20px;font-weight: 550;background-color: rgb(233, 181, 224);" onsubmit="">
+    <h1>SIGN UP</h1>
+    <label>First Name:</label>
+    <input name="first" type="text" required>
+    <label>Middle Name:</label>
+    <input name="middle" type="text" required>
+    <label>Last Name:</label>
+    <input name="last" type="text" required>
+    <label>Date Of Birth:</label>
+    <input name="dob" type="date"><br><br>
+    <label>Address:</label>
+    <input name="add" type="text">
+    <label>City:</label>
+    <input name="cty" type="text">
+    <label>District:</label>
+    <input name="dist" type="text">
+    <label>State:</label>
+    <input name="state" type="text">
+    <label>Country:</label>
+    <input name="country" type="text">
+    <label>ZIP Code:</label>
+    <input name="pin" type="text">
+    <label>Profession:</label>
+    <select name="prof" required>
+        <option value=""></option>
+        <option value="Teacher">Teacher</option>
+        <option value="Student">Student</option>
+        <option value="Others">Others</option>
+    </select>
+    <br><br>
+    <label>Phone number(please write country code):</label>
+    <input for="phno" name="mbn" type="text" for="mobilenumber"><br><br>
+    <label>Email-ID:</label>
+    <input name="eid" type="email"><br><br>
+    <label>Create Password:</label>
+    <input name="pswd" type="password"><br>
+    <label>Re-enter Password:</label>
+    <input type="password"><br>
+    <div id="error" style="color:red;display: none;">Password didnot match..</div>
+    <button type="submit">SUBMIT</button>
+  </form>
+  <script>
+    let p = document.querySelectorAll("input[type='password']");
+    console.log(p);
+    for (let i = 0; i < p.length; i++) {
+    p[i].addEventListener("input",(e)=>{
+        if(p[0].value!==p[1].value){
+            p[1].setCustomValidity("Password didn't match....")
+            document.getElementById("error").style.display = "block"
+        }
+        else{
+            p[1].setCustomValidity("")
+            document.getElementById("error").style.display = "none"
+            document.getElementsByTagName("form")[0].action="http://localhost:3000/sendotp"
+            document.getElementsByTagName("form")[0].method="POST"
+        }
+    })}
+  </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/scss/Sign-in.css">
+    <style>
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="width:50%;border-radius: 10px;background-color: white;text-align: center;margin-left: 20px;position: absolute;left: 22%;top: 30%;">
+        <div class="light"
+            style="display:flex;flex-direction: row;text-align: center;align-items: center;justify-content: center;font-size: 35px;background-color: rgb(75, 76, 77);padding-top: 0px;">
+            <p style="color:#ffd700;"><b>Get</b></p>
+            <p style="color:white"><b>Arduino</b></p>
+        </div><br>
+        <form id="f" action="/send" method="POST">
+            <div style="display:inline;">
+                <label
+                    style="display:inline-block;width:40%;font-size: 18px;color: black;font-weight: 800;font-size: larger;">Username(Enter
+                    your registered Email-ID) : </label>
+                <input id="username" name="username" style="display:inline-block;width:40%;height: 18px;" type="text"
+                    required>
+            </div>
+            <br>
+            <div style="display:inline;">
+                <label
+                    style="display:inline-block;width:40%;font-size: 18px;color: black;font-weight: 800;font-size: larger;">Password: </label>
+                <input id="password" name="password" style="display:inline-block;width:40%;height: 18px;" type="password" required>
+            </div>
+            <br>
+            <br>
+            <div style="color:red;text-align: center">* if after submssion of your form new page is not redirected, then either your given email or password is incorrect..</div>
+            <a href="/reset">FORGOT PASSWORD?</a><br><br>
+            <button id="click1" style="background-color: gold;border-radius: 10px;width: 250px;height: 25px;border-color: gold;color: black;font-weight: 700;"  type="submit">LOGIN</button>
+            <p style="color:black;font-weight: 800;">New User?<a href="/html/profile.html">Sign in</a></p>
+            <br>
+            <div id="false" style="color: red;display: none;">INCORRECT USERNAME OR PASSWORD...</div><br>
+    </div>
+    </form>
+    <script type="module" src="/js/Signin.mjs"></script>
+</body>
+
+</html>
