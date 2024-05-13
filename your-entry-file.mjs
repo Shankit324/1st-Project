@@ -23,7 +23,7 @@ function generateOTP() {
     return otp;
 }
 
-await mongoose.connect(''); //give your iwn mongo db collection link
+await mongoose.connect(''); //give your own mongo db collection link
 
 const Schema = new mongoose.Schema({
     Name: String,
